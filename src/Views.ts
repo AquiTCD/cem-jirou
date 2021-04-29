@@ -1,5 +1,3 @@
 import SampleFormModal from './views/SampleFormModal'
 
-export {
-  SampleFormModal,
-}
+export { SampleFormModal }
