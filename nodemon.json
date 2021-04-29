@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ext": "ts,tsx",
+  "exec": "./node_modules/.bin/ts-node ./src/App.ts"
+}
