@@ -1,0 +1,6 @@
+pre-commit:
+  parallel: true
+  commands:
+    linter:
+      glob: '*.{js,ts}'
+      run: yarn fix:eslint --ignore-path .eslintignore {staged_files} && yarn fix:prettier --ignore-path .eslintignore {staged_files}
