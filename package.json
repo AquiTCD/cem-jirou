@@ -1,11 +1,12 @@
 {
   "scripts": {
+    "dev": "./node_modules/.bin/nodemon",
     "lint": "yarn lint:eslint && yarn lint:prettier",
-    "lint:eslint": "eslint . --ext .ts,.tsx --config .eslintrc.js ./src",
-    "lint:prettier": "prettier . --check 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:eslint": "eslint . --ext .ts,.tsx --config .eslintrc.js",
+    "lint:prettier": "prettier . --check",
     "fix": "yarn fix:eslint && yarn fix:prettier",
     "fix:eslint": "yarn lint:eslint --fix",
-    "fix:prettier": "yarn lint:prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+    "fix:prettier": "yarn lint:prettier --write"
   },
   "dependencies": {
     "@slack/bolt": "^3.3.0",
